@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرحبا بك .abumisfer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+            scroll-behavior: smooth;
+        }
+        a { text-decoration: none; color: inherit; }
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 3em; margin-bottom: 10px; animation: fadeInDown 1s ease-in-out; }
+        header p { font-size: 1.2em; animation: fadeInUp 1s ease-in-out; }
+        nav {
+            display: flex; justify-content: center; gap: 30px;
+            background-color: rgba(255,255,255,0.1);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 10;
+        }
+        nav a {
+            color: white; font-weight: bold; padding: 8px 12px; border-radius: 5px; transition: 0.3s;
+        }
+        nav a:hover { background-color: rgba(255,255,255,0.2); }
+
+        main { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        section {
+            margin-bottom: 60px; padding: 30px; background: white; border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); opacity: 0; transform: translateY(20px); transition: 0.8s ease;
+            display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+        }
+        section.visible { opacity: 1; transform: translateY(0); }
+        section img { max-width: 150px; border-radius: 10px; margin-left: 20px; }
+        h2 { color: #2575fc; margin-bottom: 15px; flex-basis: 100%; }
+        p { font-size: 1.1em; margin-bottom: 15px; flex: 1; }
+        button {
+            background-color: #6a11cb; color: white; border: none; padding: 12px 20px; font-size: 16px;
+            border-radius: 8px; cursor: pointer; transition: 0.3s;
+        }
+        button:hover { background-color: #2575fc; transform: scale(1.05); }
+        .contact-link {
+            display: flex; align-items: center; gap: 10px; font-size: 1.1em;
+            color: #2575fc; font-weight: bold; margin-top: 10px; transition: 0.3s;
+        }
+        .contact-link:hover { color: #6a11cb; transform: scale(1.05); }
+        .contact-link img { width: 30px; height: 30px; }
+        footer { text-align: center; padding: 20px; background-color: #2575fc; color: white; }
+
+        @keyframes fadeInDown { 0% { opacity:0; transform:translateY(-30px);} 100%{opacity:1; transform:translateY(0);} }
+        @keyframes fadeInUp { 0% { opacity:0; transform:translateY(30px);} 100%{opacity:1; transform:translateY(0);} }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبا بك .abumisfer</h1>
+        <p>مطور ألعاب ومبرمج مواقع، أصنع تجارب رقمية ممتعة وواجهة مستخدم جذابة</p>
+    </header>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">نبذة عني</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div>
+                <h2>الصفحة الرئيسية</h2>
+                <p>اذا تبي ابرمج لك موقع او لعبه تواصل معي في تيك توك</p>
+                <button onclick="window.open('https://www.tiktok.com/@zi_alsada_zi','_blank')">زيارة حساب تيك توك</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div>
+                <h2>نبذة عني</h2>
+                <p>أنا مطور ألعاب ومبرمج مواقع، أحب تحويل الأفكار إلى تجارب رقمية ممتعة. أصنع ألعاباً تفاعلية ومواقع ويب جذابة وسهلة الاستخدام.</p>
+                <p>خبرتي تشمل تصميم واجهة المستخدم، برمجة الألعاب، والتفاعل مع المستخدم بشكل سلس وممتع.</p>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="برمجة">
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div>
+                <h2>تواصل معنا</h2>
+                <p>تابعني على تيك توك أو انضم لسيرفر ديسكورد للتواصل المباشر:</p>
+                <a class="contact-link" href="https://www.tiktok.com/@zi_alsada_zi" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg" alt="TikTok Logo">
+                    @zi_alsada_zi
+                </a>
+                <a class="contact-link" href="https://discord.gg/C4HsrNQ5Sr" target="_blank">
+                    <img src="https://cdn.worldvectorlogo.com/logos/discord-6.svg" alt="Discord Logo">
+                    سيرفري ديسكورد
+                </a>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="تواصل">
+        </section>
+    </main>
+
+    <footer>
+        جميع الحقوق محفوظة © 2025
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){ entry.target.classList.add('visible'); }
+            });
+        }, { threshold: 0.2 });
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
